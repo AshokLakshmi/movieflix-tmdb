@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 99;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+
 }
 
 .header.active {
@@ -78,23 +78,30 @@
 
 @media only screen and (max-width: 550px) {
 
-    .navbar--links.hide {
-        display: none;
-    }
-
-    .navbar--links.show {
-        display: flex;
-        background-color: #ffffff;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        padding: 2rem;
-        top: 6rem;
-        right: 0;
-        width: 100%;
-    }
 
     .navbar svg {
         display: block;
     }
+
+    .navbar--links {
+        top: 6rem;
+        display: flex;
+        right: 0;
+        position: absolute;
+        background-color: #B22727;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(20px at 90% -10%);
+        -webkit-clip-path: circle(20px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .navbar--links.show {
+        clip-path: circle(100% at 90% -10%);
+        -webkit-clip-path: circle(600px at 90% -10%);
+        pointer-events: all;
+    }
+
 }
