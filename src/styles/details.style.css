@@ -75,6 +75,12 @@
     overflow-x: scroll;
 }
 
+.selected__movie_cast::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 .selected__movie_cast_single {
     position: relative;
     object-fit: contain;
