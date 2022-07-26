@@ -1,0 +1,84 @@
+.banner {
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 550px;
+
+    box-shadow: rgb(0, 0, 0) 0px -60px 36px -28px inset;
+}
+
+.banner__contents {
+    height: 190px;
+    padding: 2rem;
+    width: 80%;
+    height: 60%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    background: rgba(32, 32, 32, 0.178);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.0px);
+    -webkit-backdrop-filter: blur(8.9px);
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner__rating {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__rating h1,
+.banner__rating svg {
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.banner__rating h1:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.banner__rating svg {
+    color: rgb(235, 235, 2);
+}
+
+.banner__description {
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 1rem;
+
+    text-align: justify;
+}
+
+.banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}

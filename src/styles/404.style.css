@@ -1,0 +1,13 @@
+.notfound__page {
+    width: 100%;
+
+    color: #ffffff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notfound__page img {
+    width: 500px;
+}
